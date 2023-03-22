@@ -1,0 +1,14 @@
+SELECT * FROM books;
+INSERT INTO books(book_id, author, type, name) VALUES (3, 'Dan Brown', 'Fiction', 'Da Vinci Demons');
+SELECT * FROM books;
+DELETE FROM books WHERE book_id = 3;
+SELECT * FROM books;
+INSERT INTO books(book_id, author, type, name) VALUES(3, 'Dan Brown', 'Fiction', 'Da Vinci Demons');
+SELECT * FROM books;
+INSERT INTO books(book_id, author, type, name) VALUES(4, 'Dan Brown', 'Fiction', 'Digital Fortress');
+
+SELECT * FROM books ORDER BY book_id;
+DELETE FROM books WHERE book_id = 4;
+SELECT * FROM books WHERE author LIKE '%Dan%';
+INSERT INTO books(book_id, author, type, name) VALUES(4, 'Dan Brown', 'Fiction', 'Digital Fortress');
+SELECT * FROM books;
